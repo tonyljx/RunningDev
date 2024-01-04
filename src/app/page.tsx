@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { AccordionFAQ } from "@/components/ui/tony/faq";
 import LoginModal from "@/components/ui/tony/login-modal";
 import Mansory from "@/components/ui/tony/mansory";
+import Price from "@/components/ui/tony/price";
 // import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center px-6 ">
+    <main className="flex  flex-col items-center space-y-8 px-6">
       <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-50 via-slate-50 to-teal-50"></div>
 
       <header className=" backdrop: mt-2 flex w-full justify-between">
@@ -67,6 +69,14 @@ export default function Home() {
       </div>
 
       <Mansory />
+
+      {/* 付款页面 */}
+      <Price />
+
+      {/* FAQ */}
+      <AccordionFAQ />
+
+      <footer className="h-screen"></footer>
     </main>
   );
 }

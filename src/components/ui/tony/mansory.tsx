@@ -6,9 +6,9 @@ type Props = {};
 export default function Mansory({}: Props) {
   return (
     <div className="grid   gap-6 md:grid-cols-2 lg:grid-cols-3 lg:text-[13px]">
-      <div className="col-span-2 grid gap-6 rounded-lg p-4 lg:col-span-1">
+      <div className="col-span-2 grid gap-6 rounded-lg p-6 lg:col-span-1">
         {/* card1 */}
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -33,7 +33,7 @@ export default function Mansory({}: Props) {
 
         {/* card2 */}
 
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -61,7 +61,7 @@ export default function Mansory({}: Props) {
 
         {/* card3 */}
 
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -88,9 +88,9 @@ export default function Mansory({}: Props) {
         </div>
       </div>
 
-      <div className="col-span-2 grid gap-6 rounded-lg p-4 lg:col-span-1">
+      <div className="col-span-2 grid gap-6 rounded-lg p-6 lg:col-span-1">
         {/* card1 */}
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -118,7 +118,7 @@ export default function Mansory({}: Props) {
 
         {/* card2 */}
 
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -144,7 +144,7 @@ export default function Mansory({}: Props) {
 
         {/* card3 */}
 
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -170,9 +170,9 @@ export default function Mansory({}: Props) {
         </div>
       </div>
 
-      <div className="col-span-2 grid gap-6 rounded-lg p-4 lg:col-span-1">
+      <div className="col-span-2 grid gap-6 rounded-lg p-6 lg:col-span-1">
         {/* card1 */}
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -198,7 +198,7 @@ export default function Mansory({}: Props) {
 
         {/* card2 */}
 
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
@@ -225,7 +225,7 @@ export default function Mansory({}: Props) {
 
         {/* card3 */}
 
-        <div className="flex flex-col gap-6 rounded border p-4">
+        <div className="flex flex-col gap-6 rounded border p-6">
           <div className="flex items-center gap-3">
             <Avatar className="h-16 w-16">
               <AvatarImage
