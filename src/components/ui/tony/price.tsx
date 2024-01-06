@@ -1,10 +1,15 @@
 import { CheckCircle, CheckCircleIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import FadeIn from "./fade-in";
+import { cn } from "@/lib/utils";
 
-type Props = {};
+interface PriceProps extends React.HTMLProps<HTMLDivElement> {
+  // 你的自定义属性
+}
 
-export default function Price({}: Props) {
+export default function Price({ className }: PriceProps) {
   const priceStrategy = [
     {
       plan: "Standard",
@@ -41,10 +46,12 @@ export default function Price({}: Props) {
   ];
 
   return (
-    <div className="">
-      <h2 className="text-center text-3xl font-bold tracking-tight lg:text-5xl">
-        Use template to speed up
-      </h2>
+    <div className={cn(className)}>
+      <FadeIn>
+        <h2 className="animate-fade-up text-center text-3xl font-bold tracking-tight lg:text-5xl">
+          Use template to speed up
+        </h2>
+      </FadeIn>
       <p className="text-center text-[16px] leading-7 text-muted-foreground">
         Screen Studio is a one-time purchase. You get all the features in every
         plan.
@@ -54,7 +61,7 @@ export default function Price({}: Props) {
         {priceStrategy.map((item) => (
           <div
             key={item.plan}
-            className="flex flex-col gap-2 rounded-lg border bg-slate-100 px-8 py-10 transition-all duration-150 hover:-translate-y-2 hover:shadow-xl hover:shadow-violet-500/50"
+            className="flex flex-col gap-2 rounded-lg border bg-slate-100 px-8 py-10 transition-all duration-150 hover:-translate-y-2 hover:shadow-lg"
           >
             <h3 className=" bg-gradient-to-r from-sky-500 to-violet-500 bg-clip-text text-2xl font-semibold text-transparent">
               {item.plan}
@@ -73,7 +80,7 @@ export default function Price({}: Props) {
 
             <Link
               href="#"
-              className="rounded bg-violet-300 px-3 py-2 text-center font-medium transition-all duration-150 hover:bg-violet-400 hover:text-slate-50"
+              className="rounded bg-primary px-3 py-2 text-center font-medium text-slate-50 transition-all duration-150 "
             >
               Getting Started
             </Link>

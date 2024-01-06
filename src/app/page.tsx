@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
+import ColorPicker from "@/components/ui/tony/color-picker";
 import { AccordionFAQ } from "@/components/ui/tony/faq";
+import Features from "@/components/ui/tony/features";
 import LoginModal from "@/components/ui/tony/login-modal";
-import Mansory from "@/components/ui/tony/mansory";
+import Mansory from "@/components/ui/tony/mansoryv2";
+// import Mansory from "@/components/ui/tony/mansory";
 import Price from "@/components/ui/tony/price";
 // import { Github } from "lucide-react";
 import Image from "next/image";
@@ -9,7 +12,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex  flex-col items-center space-y-8 px-6">
+    <main className="flex  flex-col items-center gap-3 px-6">
       <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-50 via-slate-50 to-teal-50"></div>
 
       <header className=" backdrop: mt-2 flex w-full justify-between">
@@ -20,11 +23,11 @@ export default function Home() {
         <LoginModal />
       </header>
 
-      <div className="  mt-10 max-w-xl space-y-5">
-        <h2 className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl md:leading-[5rem]">
+      <div className="mt-16 max-w-xl space-y-5">
+        <h2 className="bg-gradient-to-r from-pink-500  to-violet-500 bg-clip-text text-center text-4xl font-bold text-transparent duration-1000 animate-in fade-in slide-in-from-bottom-5 md:text-7xl md:leading-[5rem]">
           Minimal Saas Template
         </h2>
-        <p className="text-center text-muted-foreground ">
+        <p className="text-center text-muted-foreground duration-1000 animate-in fade-in slide-in-from-bottom-5">
           An template for your next project based on Next.js
         </p>
 
@@ -32,7 +35,7 @@ export default function Home() {
           <Link
             target="_blank"
             href="https://github.com/tonyljx"
-            className="flex items-center gap-2 rounded border px-4 py-2  transition-all duration-200 hover:-translate-y-2 hover:shadow-lg hover:shadow-violet-200"
+            className="flex items-center gap-2 rounded border bg-slate-100 px-4 py-2  transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary"
           >
             <svg
               fill="#000000"
@@ -49,7 +52,7 @@ export default function Home() {
 
           <Link
             href="#"
-            className="flex items-center gap-2 rounded border px-4 py-2  transition-all duration-200 hover:-translate-y-2 hover:shadow-lg hover:shadow-violet-200"
+            className=" flex items-center gap-2 rounded border bg-slate-100 px-4 py-2  transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +71,11 @@ export default function Home() {
         </div>
       </div>
 
-      <Mansory />
+      <ColorPicker />
+
+      <Features className="mt-[3rem]" />
+
+      <Mansory className="mt-[10rem]" />
 
       {/* 付款页面 */}
       <Price />

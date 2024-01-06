@@ -1,5 +1,7 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "../avatar";
+import { Icons } from "./icons";
+import Link from "next/link";
 
 type Props = {};
 
@@ -18,11 +20,16 @@ export default function Mansory({}: Props) {
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
 
-            <div className="flex flex-col gap-1">
-              <span>Theo - t3.gg</span>
-              <span className="align-baseline text-sm text-muted-foreground">
-                @t3.gg
-              </span>
+            <div className="flex w-full items-center gap-1">
+              <div className="flex flex-1 flex-col gap-1">
+                <span>Theo - t3.gg</span>
+                <span className="align-baseline text-sm text-muted-foreground">
+                  @t3.gg
+                </span>
+              </div>
+              <Link href="https://twitter.com/abc30037274" target="_blank">
+                <Icons.twitter />
+              </Link>
             </div>
           </div>
           <p>
@@ -43,12 +50,15 @@ export default function Mansory({}: Props) {
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-1 flex-col gap-1">
               <span>Theo - t3.gg</span>
               <span className="align-baseline text-sm text-muted-foreground">
                 @t3.gg
               </span>
             </div>
+            <Link href="https://twitter.com/abc30037274" target="_blank">
+              <Icons.twitter />
+            </Link>
           </div>
           <p>
             Mitigating Hallucination in LLMs This paper summarizes 32 techniques
@@ -71,12 +81,15 @@ export default function Mansory({}: Props) {
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-1 flex-col gap-1">
               <span>宝玉老师</span>
               <span className="align-baseline text-sm text-muted-foreground">
                 @宝玉
               </span>
             </div>
+            <Link href="https://twitter.com/abc30037274" target="_blank">
+              <Icons.twitter />
+            </Link>
           </div>
           <p>
             使用个人域名搭建类似 Linktree、Bento

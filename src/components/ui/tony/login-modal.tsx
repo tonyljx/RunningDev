@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,10 +13,13 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Icons } from "@/components/ui/tony/icons";
+import { useColorStore } from "@/store/color-store";
+import { cn } from "@/lib/utils";
 
 type Props = {};
 
 export default function LoginModal({}: Props) {
+  const themeColor = useColorStore((state) => state.themeColor);
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -56,7 +60,7 @@ export default function LoginModal({}: Props) {
             <Label htmlFor="name" className="text-slate-500">
               Email Address
             </Label>
-            <Input id="name" value="gogo@gmail.com" />
+            <Input id="name" placeholder="gogo@gmail.com" />
           </div>
           <div className="grid items-center gap-2">
             <Label htmlFor="username" className="text-slate-500">
@@ -73,7 +77,7 @@ export default function LoginModal({}: Props) {
           </p>
         </div>
         <DialogFooter>
-          <Button className="w-full" type="submit">
+          <Button className={cn("w-full", themeColor)} type="submit">
             Sign In
           </Button>
         </DialogFooter>

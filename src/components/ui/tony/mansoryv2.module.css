@@ -1,0 +1,25 @@
+/* MasonryLayout.module.css */
+.masonry {
+  columns: 3 200px; /* This creates 3 columns each with a minimum width of 200px */
+  column-gap: 1rem; /* This sets the gap between the columns */
+}
+
+.item {
+  break-inside: avoid; /* This prevents items from being split across columns */
+  margin-bottom: 1rem; /* This sets the gap between items within the same column */
+  display: inline-block; /* This ensures the break-inside property works correctly */
+  width: 100%; /* This ensures the item takes up the full column width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .masonry {
+    columns: 2 200px; /* Adjust to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .masonry {
+    columns: 1 auto; /* Single column layout for very small screens */
+  }
+}
