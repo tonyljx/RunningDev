@@ -128,7 +128,7 @@ export default function Mansory({ className }: FeatureProps) {
                   <div className="flex flex-1 flex-col gap-1">
                     <span>{item.name}</span>
                     <span className="align-baseline text-sm text-muted-foreground">
-                      @{item.handle}
+                      {item.handle}
                     </span>
                   </div>
                   <Link href={item.profileLink} target="_blank">

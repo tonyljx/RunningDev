@@ -1,33 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 配置环境变量
 
-## Getting Started
+## GITHUB: 配置oauth登录
 
-First, run the development server:
+1. 打开 [github oauth apps ](https://github.com/settings/developers) 页面
+2. 点击 new Oauth App, 创建应用
+   1. application name: 写和本次应用相关的name, 无强制要求
+   2. homepage url：开发的时候写本次URL, 部署到线上需要写线上域名
+   3. Authorization callback url:
+      1. 开发的时候写本地回调url [http://localhost:3000/api/auth/callback/github](http://localhost:3000/api/auth/callback/github)
+      2. 部署线上应用需要写线上版本的url: [https://hostname/api/auth/callback/github](https://hostname/api/auth/callback/github)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## GOOGLE：配置oauth登录
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+和github基本同理,注意有几点不同
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- callback url的不同
+- google oauth url不同: 参考[https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=zh-cn](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=zh-cn)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 颜色配置
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+因为技术栈采取shadcn, 所以颜色配色方案可以参考 [https://ui.shadcn.com/themes](https://ui.shadcn.com/themes)
 
 ## Deploy on Vercel
 

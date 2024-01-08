@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import NavBar from "@/components/nav-bar";
+import AuthProvider from "@/components/auth-provider";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -15,10 +17,9 @@ export const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout(props: {
   children: React.ReactNode;
+  auth: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -28,7 +29,11 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        {children}
+        <AuthProvider>
+          <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-50 via-slate-50 to-teal-50"></div>
+          <NavBar />
+          {props.children}
+        </AuthProvider>
       </body>
     </html>
   );
