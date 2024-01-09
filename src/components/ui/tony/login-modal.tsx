@@ -16,11 +16,13 @@ import { Icons } from "@/components/ui/tony/icons";
 import { useColorStore } from "@/store/color-store";
 import { cn } from "@/lib/utils";
 import { signIn } from "next-auth/react";
+import { useTranslations } from "next-intl";
 
 type Props = {};
 
 export default function LoginModal({}: Props) {
   const themeColor = useColorStore((state) => state.themeColor);
+
   return (
     <Dialog>
       <DialogTrigger asChild>

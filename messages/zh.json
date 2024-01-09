@@ -1,0 +1,9 @@
+{
+  "Index": {
+    "title": "你好, 世界!"
+  },
+  "languageSwitch": {
+    "label": "选择语言",
+    "locale": "{locale, select, zh {简体中文} en {英语} other {其他}}"
+  }
+}

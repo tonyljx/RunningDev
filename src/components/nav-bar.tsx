@@ -19,12 +19,13 @@ import { LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { signOut, useSession } from "next-auth/react";
 import { useColorStore } from "@/store/color-store";
-
+import LocaleSwitcher from "./locale-switcher";
 type Props = {};
 
 export default function NavBar({}: Props) {
   const themeColor = useColorStore((state) => state.themeColor);
   const { data: session, status } = useSession();
+
   return (
     <header className="flex w-full justify-between border-b px-6 py-2">
       <a href="/" className="flex items-center gap-3">
@@ -33,6 +34,9 @@ export default function NavBar({}: Props) {
         <span className="text-lg font-semibold">NextJs Template</span>
       </a>
       <div className="flex items-center gap-2">
+        {/* 多语言转换 */}
+        <LocaleSwitcher />
+
         <Link
           target="_blank"
           href="https://twitter.com/abc30037274"

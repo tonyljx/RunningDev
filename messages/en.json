@@ -1,0 +1,9 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "languageSwitch": {
+    "label": "Change language",
+    "locale": "{locale, select, zh {Chinese} en {English} other {Unknown}}"
+  }
+}
