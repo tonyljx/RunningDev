@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import { useColorStore } from "@/store/color-store";
 
 type Props = {};
@@ -43,9 +43,11 @@ export default function NavBar({}: Props) {
         {/* <LoginModal /> */}
         {/* 区分登录和非登录 */}
         {!session ? (
-          <Button>
-            <Link href="/api/auth/signin">Sign In</Link>
-          </Button>
+          // 原始方式
+          // <Button>
+          //   <Link href="/api/auth/signin">Sign In</Link>
+          // </Button>
+          <LoginModal />
         ) : (
           <div className="flex items-center gap-2">
             <span className="text-base font-bold">Hi</span>
@@ -64,14 +66,18 @@ export default function NavBar({}: Props) {
                 )}
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-20">
-                <DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => signOut()}
+                  className="cursor-pointer"
+                >
                   <LogOut className="mr-2 h-4 w-4" />
-                  <Link
+                  {/* <Link
                     className="hover:text-blue-500"
                     href="/api/auth/signout"
                   >
                     <span>Log out</span>
-                  </Link>
+                  </Link> */}
+                  Log out
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

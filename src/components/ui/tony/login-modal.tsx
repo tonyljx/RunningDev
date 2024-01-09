@@ -15,6 +15,7 @@ import { Label } from "@/components/ui/label";
 import { Icons } from "@/components/ui/tony/icons";
 import { useColorStore } from "@/store/color-store";
 import { cn } from "@/lib/utils";
+import { signIn } from "next-auth/react";
 
 type Props = {};
 
@@ -35,12 +36,20 @@ export default function LoginModal({}: Props) {
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <Button variant="outline" type="button">
+          <Button
+            variant="outline"
+            type="button"
+            onClick={() => signIn("github")}
+          >
             <Icons.gitHub className="mr-2 h-4 w-4" />
             Github
           </Button>
 
-          <Button variant="outline" type="button">
+          <Button
+            variant="outline"
+            type="button"
+            onClick={() => signIn("google")}
+          >
             <Icons.google className="mr-2 h-4 w-4" />
             Google
           </Button>
