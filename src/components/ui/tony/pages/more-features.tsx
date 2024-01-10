@@ -139,7 +139,13 @@ export default function MoreFeature({ className }: Ifeatures) {
       desc: "RunningDev comes with authentication and database via [Auth.js](https://authjs.dev/)",
       demo: (
         <div className="flex items-center justify-center space-x-20">
-          <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
+          <Image
+            alt="Auth.js logo"
+            src="/authjs.webp"
+            width={50}
+            height={50}
+            unoptimized
+          />
           {/* <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} /> */}
         </div>
       ),
