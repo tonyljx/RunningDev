@@ -159,7 +159,7 @@ export default function MoreFeature({ className }: Ifeatures) {
       title: "One-click deploy",
       desc: "Deploy RunningDev to [Vercel](https://vercel.com/) in one click",
       demo: (
-        <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftonyljx%2Fsaas-lightweight-template">
+        <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftonyljx%2Fsaas-lightweight-template&env=GITHUB_APP_CLIENT_ID,GITHUB_APP_CLIENT_SECRET,GOOGLE_APP_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET&envDescription=api%20key%20for%20oauth%20login">
           <img src="https://vercel.com/button" alt="Deploy with Vercel" />
         </a>
       ),
