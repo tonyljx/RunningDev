@@ -9,9 +9,21 @@ export default function Footer({}: Props) {
     <footer className="mt-20   flex w-full flex-wrap gap-10 border-t px-8 py-12 ">
       <div className="mr-auto flex flex-1 flex-col">
         <p className="flex-1">RunningDev</p>
-        <div className="flex gap-2">
-          <Icons.X className="h-5 w-5" />
-          <Icons.gitHub className="h-5 w-5" />
+        <div className="flex gap-1">
+          <Link
+            target="_blank"
+            href="https://twitter.com/abc30037274"
+            className=" rounded p-2 transition-colors duration-150 hover:bg-slate-200"
+          >
+            <Icons.X className="h-4 w-4" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://github.com/tonyljx/saas-lightweight-template"
+            className="rounded p-2 transition-colors duration-150 hover:bg-slate-200"
+          >
+            <Icons.gitHub className="h-4 w-4" />
+          </Link>
         </div>
       </div>
 
