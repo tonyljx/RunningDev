@@ -65,9 +65,10 @@ export default function TechStack({ className }: techProps) {
         <Image
           width="75"
           height="75"
-          src="/auth.webp"
+          src="/authjs.webp"
           alt="nextauth"
           title="nextauth"
+          unoptimized
         />
       </div>
     </div>
