@@ -31,7 +31,7 @@ export default function NavBar({}: Props) {
       <a href="/" className="flex items-center gap-3">
         {/* <Image height={24} width={100} src="/vercel.svg" alt="logo" /> */}
         <Icons.vercel />
-        <span className="text-lg font-semibold">NextJs Template</span>
+        <span className="text-lg font-semibold">RunningDev</span>
       </a>
       <div className="flex items-center gap-2">
         {/* 多语言转换 */}

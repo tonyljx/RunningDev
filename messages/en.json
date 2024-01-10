@@ -1,6 +1,7 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "title": "Running NextJs",
+    "h1": "Modern NextJs SaaS Template"
   },
   "languageSwitch": {
     "label": "Change language",

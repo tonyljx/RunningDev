@@ -4,6 +4,7 @@ import { AccordionFAQ } from "@/components/ui/tony/faq";
 import Features from "@/components/ui/tony/features";
 import { Icons } from "@/components/ui/tony/icons";
 import Mansory from "@/components/ui/tony/mansoryv2";
+import MoreFeature from "@/components/ui/tony/pages/more-features";
 // import Mansory from "@/components/ui/tony/mansory";
 import Price from "@/components/ui/tony/price";
 import RotateCard from "@/components/ui/tony/rotate-card";
@@ -34,7 +35,7 @@ export default async function Home() {
     <main className="flex flex-col items-center gap-3 px-6">
       <div className="mt-16 max-w-xl space-y-5">
         <h2 className="bg-gradient-to-r from-pink-500  to-violet-500 bg-clip-text text-center text-4xl font-bold text-transparent duration-1000 animate-in fade-in slide-in-from-bottom-5 md:text-7xl md:leading-[5rem]">
-          Modern Next.Js Template
+          {t("h1")}
         </h2>
         <p className="text-center text-muted-foreground duration-1000 animate-in fade-in slide-in-from-bottom-5">
           An template for your next project based on Next.js {t("title")}
@@ -59,13 +60,6 @@ export default async function Home() {
             <Icons.vercel className="h-4 w-4" />
             <span>Deploy to vercel</span>
           </Link>
-          {/* <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftonyljx%2Fsaas-lightweight-template&skippable-integrations=1">
-            <img
-              src="https://vercel.com/button"
-              alt="Deploy with Vercel"
-              className="px-4 py-2"
-            />
-          </a> */}
         </div>
       </div>
 
@@ -75,6 +69,8 @@ export default async function Home() {
 
       <TechStack className="mt-[3rem]" />
 
+      <MoreFeature className="mt-[4rem]" />
+
       <Mansory className="mt-[10rem]" />
 
       {/* 付款页面 */}
@@ -82,11 +78,6 @@ export default async function Home() {
 
       {/* FAQ */}
       <AccordionFAQ />
-
-      {/* rotate card */}
-      <RotateCard />
-
-      <footer className="h-screen"></footer>
     </main>
   );
 }

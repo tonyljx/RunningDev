@@ -3,13 +3,15 @@ import React, { useRef, useState } from "react";
 import styles from "./rotate-card.module.css";
 import { cn } from "@/lib/utils";
 import { Card } from "../card";
-type Props = {};
+type Props = {
+  children?: React.ReactNode;
+  className?: string;
+};
 
-export default function RotateCard({}: Props) {
+export default function RotateCard({ children, className }: Props) {
   const [rotateX, setRotateX] = useState(0);
   const [rotateY, setRotateY] = useState(0);
   const cardRef = useRef<HTMLDivElement | null>(null);
-  const [degree, setDegree] = useState(0);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     // 业务规则1,鼠标超过中线,旋转一定的角度,左边就翘左,右边就翘右
     // 业务规则2：设置最大的角度是10,然后就可以设置y的程度，乘对应的比例
@@ -40,8 +42,10 @@ export default function RotateCard({}: Props) {
 
   return (
     <Card
+      //  h-72  w-96
       className={cn(
-        "card  rounde-lg h-72 w-96 transform cursor-pointer  p-4 text-center transition-transform duration-300",
+        "rounde-lg flex transform cursor-pointer items-center justify-center  p-4 text-center transition-transform duration-300",
+        className,
         // styles.container,
       )}
       style={{
@@ -52,10 +56,7 @@ export default function RotateCard({}: Props) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <p>Hover Me</p>
-      <div className="flex flex-col">
-        <span>degree {degree}</span>
-      </div>
+      {children}
     </Card>
   );
 }

@@ -1,6 +1,7 @@
 {
   "Index": {
-    "title": "你好, 世界!"
+    "title": "Running NextJs",
+    "h1": "现代 Next.Js SaaS 模板"
   },
   "languageSwitch": {
     "label": "选择语言",

@@ -21,15 +21,14 @@ import { useRouter } from "next/navigation";
 export default function LocaleSwitcher() {
   const t = useTranslations("languageSwitch");
   const locale = useLocale();
-
   const router = useRouter();
 
-  console.log(locales);
+  // console.log(locales);
 
   return (
     <Select onValueChange={(v) => router.push(`/${v}`)}>
-      <SelectTrigger className="">
-        <SelectValue placeholder="Language Switcher" />
+      <SelectTrigger className="w-16">
+        <SelectValue placeholder={locale} />
       </SelectTrigger>
       <SelectContent defaultValue={locale}>
         <SelectGroup>

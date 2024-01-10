@@ -6,6 +6,7 @@ import "../globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/nav-bar";
+import Footer from "@/components/footer";
 
 type Props = {
   children: ReactNode;
@@ -35,6 +36,7 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavBar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
