@@ -17,10 +17,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export default function RootLayout(props: {
-  children: React.ReactNode;
-  auth: React.ReactNode;
-}) {
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body
