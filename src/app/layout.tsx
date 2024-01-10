@@ -30,7 +30,7 @@ export default function RootLayout(props: {
         )}
       >
         <AuthProvider>
-          <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-50 via-slate-50 to-teal-50"></div>
+          {/* <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-100 via-slate-100 to-teal-50"></div> */}
           {/* <NavBar /> */}
           {props.children}
         </AuthProvider>

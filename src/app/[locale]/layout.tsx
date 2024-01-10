@@ -6,7 +6,6 @@ import "../globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/nav-bar";
-import AuthProvider from "@/components/auth-provider";
 
 type Props = {
   children: ReactNode;
@@ -32,6 +31,7 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
   return (
     <html lang={locale}>
       <body>
+        <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-100 via-slate-100 to-teal-50"></div>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavBar />
           {children}

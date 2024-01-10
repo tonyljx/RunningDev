@@ -27,7 +27,7 @@ export default function LocaleSwitcher() {
   console.log(locales);
 
   return (
-    <Select onValueChange={(v) => router.replace(`/${v}`)}>
+    <Select onValueChange={(v) => router.push(`/${v}`)}>
       <SelectTrigger className="">
         <SelectValue placeholder="Language Switcher" />
       </SelectTrigger>

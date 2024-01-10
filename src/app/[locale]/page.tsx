@@ -6,6 +6,7 @@ import { Icons } from "@/components/ui/tony/icons";
 import Mansory from "@/components/ui/tony/mansoryv2";
 // import Mansory from "@/components/ui/tony/mansory";
 import Price from "@/components/ui/tony/price";
+import RotateCard from "@/components/ui/tony/rotate-card";
 import TechStack from "@/components/ui/tony/tech-stack";
 // import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -81,6 +82,9 @@ export default async function Home() {
 
       {/* FAQ */}
       <AccordionFAQ />
+
+      {/* rotate card */}
+      <RotateCard />
 
       <footer className="h-screen"></footer>
     </main>
