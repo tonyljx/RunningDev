@@ -175,7 +175,8 @@ export default function Mansory({}: Props) {
             </div>
           </div>
           <p>
-            #工程师学习 这个 Today's top trending papers in Computer Science
+            #工程师学习 这个 Today&apos;s top trending papers in Computer
+            Science
             很适合喜欢计算机科学的小伙伴关注，有大量新鲜的值得一看的计算机论文，做成了类似于
             Github Trending 的形式，很适合沉下心来研究，近期毕竟火的是 AI
             相关的内容。 🤖 https://trendingpapers.com/papers
