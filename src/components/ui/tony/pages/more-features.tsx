@@ -151,7 +151,7 @@ export default function MoreFeature({ className }: Ifeatures) {
     },
     {
       title: "Lemon Squeezy",
-      desc: "Add payment to current Saas Template",
+      desc: "Add payment to current Saas Template *coming soon*",
       demo: <Icons.lemon className="h-10 w-10" />,
     },
     {

@@ -8,7 +8,7 @@ import {
 export function AccordionFAQ() {
   return (
     <div className="w-full">
-      <h2 className="mt-[10rem] text-center text-3xl font-bold tracking-tight lg:text-5xl">
+      <h2 className="mt-[10rem] text-center text-3xl font-bold tracking-tight duration-1000 animate-in slide-in-from-bottom-6 lg:text-5xl">
         Questions & Answers
       </h2>
       <p className="text-center text-[16px] leading-7 text-muted-foreground">
