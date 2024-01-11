@@ -80,7 +80,7 @@ export default async function Home() {
       {/* FAQ */}
       <AccordionFAQ />
 
-      <TwitterWidget className="mt-[3rem] max-w-[2/3]" />
+      <TwitterWidget className="mt-[3rem] max-w-[60rem]" />
     </main>
   );
 }

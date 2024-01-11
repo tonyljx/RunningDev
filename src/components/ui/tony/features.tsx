@@ -23,13 +23,13 @@ export default function Features({ className }: FeatureProps) {
 
   const features = [
     {
-      title: "Onboarding",
-      desc: "Streamlined, step-by-step user onboarding for quick adoption.",
+      title: "User Friendly",
+      desc: "Easy to use and copy whatever you like to your project",
       icon: <UserRoundPlus className="text-slate-50" />,
     },
     {
       title: "Integration",
-      desc: "Unified third-party integration management to simplify workflows.",
+      desc: "Use modern libraries like shadcn and nextAuth.js",
       icon: <PlugIcon className="text-slate-50" />,
     },
     {
@@ -48,8 +48,8 @@ export default function Features({ className }: FeatureProps) {
       icon: <RocketIcon className="text-slate-50" />, // Replace with actual Accessibility icon from Lucide
     },
     {
-      title: "Extensive Components",
-      desc: "Ensuring the platform is accessible to all users.",
+      title: "Multiple Components",
+      desc: "ready-to-use components",
       icon: <Boxes className="text-slate-50" />, // Replace with actual Accessibility icon from Lucide
     },
   ];
