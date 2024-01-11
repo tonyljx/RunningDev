@@ -20,7 +20,7 @@ export default function Footer({}: Props) {
           </Link>
           <Link
             target="_blank"
-            href="https://github.com/tonyljx/saas-lightweight-template"
+            href="https://github.com/tonyljx/"
             className="rounded p-2 transition-colors duration-150 hover:bg-slate-200"
           >
             <Icons.gitHub className="h-4 w-4" />

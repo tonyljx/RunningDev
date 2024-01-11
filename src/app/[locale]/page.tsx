@@ -45,7 +45,7 @@ export default async function Home() {
         <div className="flex justify-center gap-3">
           <Link
             target="_blank"
-            href="https://github.com/tonyljx"
+            href="https://github.com/tonyljx/RunningDev"
             className="flex items-center gap-2 rounded border bg-slate-100 px-4 py-2  transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
           >
             <Icons.gitHub className="h-4 w-4" />
