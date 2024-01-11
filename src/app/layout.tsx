@@ -5,6 +5,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/nav-bar";
 import AuthProvider from "@/components/auth-provider";
+import Script from "next/script";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           {props.children}
         </AuthProvider>
       </body>
+      <Script async src="https://platform.twitter.com/widgets.js"></Script>
     </html>
   );
 }

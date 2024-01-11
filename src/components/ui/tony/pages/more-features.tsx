@@ -118,7 +118,7 @@ export default function MoreFeature({ className }: Ifeatures) {
     {
       title: "I18n support",
       desc: "use [Next-Intl](https://next-intl-docs.vercel.app/) to support i18n",
-      demo: <Languages />,
+      demo: <Languages className="h-10 w-10" />,
       size: "small",
     },
     {
