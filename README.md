@@ -8,10 +8,10 @@
 
 <div align="center">
    <img width="50" src="./public/next.svg" alt="Next.js" title="Next.js"/> 
-   <img width="50" src="./public/react.svg" alt="react.js" title="react.js"/> 
-   <img alt="next-auth" width="50" src="./public/authjs.webp"/>
-	 <img width="50" src="./public/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS"/>
-
+   <img width="50" src="./public/react.svg" alt="react.js" title="react.js"/>
+  <img width="50" src="./public/ts.svg" alt="ts" title="TypeScript"/>
+  <img width="50" src="./public/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS"/>
+  <img alt="next-auth" width="50" src="./public/authjs.webp"/>
 </div>
 
 ## Features
@@ -28,6 +28,23 @@
 - [ ] NextAuth
   - [ ] Login
   - [ ] Registration
+
+## Local Deployment
+
+After cloning the project, refer to the `.env.example` to create a `.env` file, and configure the environment variables for the development environment as described in the [Configuration Documentation](#environment-variables) below.
+
+```shell
+npm i
+npm run dev
+```
+
+> [!IMPORTANT]
+> The configurations for the development environment and production environment are different, which should be noted.
+
+## Deployment
+
+One Click deploy to [vercel](https://vercel.com/)  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftonyljx%2Fsaas-lightweight-template&env=GITHUB_APP_CLIENT_ID,GITHUB_APP_CLIENT_SECRET,GOOGLE_APP_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET)
 
 ## Configuration
 
@@ -50,7 +67,11 @@ Since the UI adopts shadcn, the color scheme can refer to [shadcn](https://ui.sh
 Similar to github with a few differences:
 
 - Different callback url
-- Different google oauth url: Refer to [https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=zh-cn](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=zh-cn)
+- Different google oauth url: Refer to [doc](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=en)
+
+## About Me
+
+- [X / Twitter](https://twitter.com/abc30037274)
 
 ## Star History
 

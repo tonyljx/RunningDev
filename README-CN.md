@@ -8,10 +8,10 @@
 
 <div align="center">
    <img width="50" src="./public/next.svg" alt="Next.js" title="Next.js"/> 
-   <img width="50" src="./public/react.svg" alt="react.js" title="react.js"/> 
-   <img alt="next-auth" width="50" src="./public/authjs.webp"/>
-	 <img width="50" src="./public/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS"/>
-
+   <img width="50" src="./public/react.svg" alt="react.js" title="react.js"/>
+  <img width="50" src="./public/ts.svg" alt="ts" title="TypeScript"/>
+  <img width="50" src="./public/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS"/>
+  <img alt="next-auth" width="50" src="./public/authjs.webp"/>
 </div>
 
 ## 特点
@@ -28,6 +28,23 @@
 - [ ] NextAuth
   - [ ] 登录
   - [ ] 注册
+
+## 本地部署
+
+克隆该项目后, 参考`.env.example`创建`.env`文件, 并参考下面的[配置文档](#环境变量) 配置开发环境的环境变量
+
+```shell
+npm i
+npm run dev
+```
+
+> [!IMPORTANT]
+> 开发环境和线上环境的配置是不一样的,需要注意
+
+## 部署
+
+可以方便的一键部署到 [vercel](https://vercel.com/) 看效果
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftonyljx%2Fsaas-lightweight-template&env=GITHUB_APP_CLIENT_ID,GITHUB_APP_CLIENT_SECRET,GOOGLE_APP_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET)
 
 ## 配置
 
@@ -51,6 +68,10 @@
 
 - callback url的不同
 - google oauth url不同: 参考[https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=zh-cn](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow?hl=zh-cn)
+
+## 关于我
+
+- [X / Twitter](https://twitter.com/abc30037274)
 
 ## Star History
 
