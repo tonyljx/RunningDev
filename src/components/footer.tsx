@@ -35,6 +35,7 @@ export default function Footer({}: Props) {
               width={162} // 你需要提供正确的宽度
               src="/kofi_button_red.png"
               alt="Buy Me a Coffee at ko-fi.com"
+              unoptimized
             />
           </Link>
         </div>
