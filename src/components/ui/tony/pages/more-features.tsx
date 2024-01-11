@@ -135,7 +135,7 @@ export default function MoreFeature({ className }: Ifeatures) {
     },
 
     {
-      title: "Built-in Auth + Database",
+      title: "Built-in Auth",
       desc: "RunningDev comes with authentication and database via [Auth.js](https://authjs.dev/)",
       demo: (
         <div className="flex items-center justify-center space-x-20">

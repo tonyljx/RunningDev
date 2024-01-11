@@ -79,7 +79,7 @@ export default async function Home() {
       {/* FAQ */}
       <AccordionFAQ />
 
-      <div className="columns-3">
+      <div className="md:columns-3">
         <blockquote className="twitter-tweet">
           <p lang="en" dir="ltr">
             I am FREAKING OUT. DesignerGPT is listed as number 1 in trending on
@@ -130,7 +130,7 @@ export default async function Home() {
             January 10, 2024
           </a>
         </blockquote>
-        <blockquote class="twitter-tweet">
+        <blockquote className="twitter-tweet">
           <p lang="zh" dir="ltr">
             推荐文章【独立开发的五年】，出海，然后随心所欲的活着
             <a href="https://t.co/YhIy6HnIy4">https://t.co/YhIy6HnIy4</a>{" "}

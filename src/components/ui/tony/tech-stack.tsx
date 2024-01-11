@@ -48,13 +48,13 @@ export default function TechStack({ className }: techProps) {
           alt="shadcnui"
           title="shadcnui"
         />
-        <Image
+        {/* <Image
           width="75"
           height="75"
           src="/prisma.svg"
           alt="prisma"
           title="prisma"
-        />
+        /> */}
         <Image
           width="75"
           height="75"
