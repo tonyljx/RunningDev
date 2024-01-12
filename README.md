@@ -92,5 +92,5 @@ npm run dev
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tonyljx/saas-lightweight-template&type=Date)](https://star-history.com/#tonyljx/saas-lightweight-template&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=tonyljx/RunningDev&type=Date)](https://star-history.com/#tonyljx/RunningDev&Date)
 
