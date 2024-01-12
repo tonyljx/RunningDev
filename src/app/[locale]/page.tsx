@@ -34,7 +34,7 @@ export default async function Home() {
 
   return (
     <main className="flex flex-col items-center gap-3 px-6">
-      <div className="mt-8 max-w-xl space-y-5">
+      <div className="mt-16 max-w-xl space-y-5">
         <h2 className="bg-gradient-to-r from-pink-500  to-violet-500 bg-clip-text text-center text-4xl font-bold text-transparent duration-1000 animate-in fade-in slide-in-from-bottom-5 md:text-7xl md:leading-[5rem]">
           {t("h1")}
         </h2>
@@ -68,7 +68,7 @@ export default async function Home() {
 
       <Features className="mt-[3rem]" />
 
-      <TechStack className="mt-[2rem]" />
+      <TechStack className="mt-[3rem]" />
 
       <MoreFeature className="mt-[4rem]" />
 
