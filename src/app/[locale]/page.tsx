@@ -16,9 +16,7 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 async function getGithubStars() {
-  const res = await fetch(
-    "https://api.github.com/repos/tonyljx/saas-lightweight-template",
-  );
+  const res = await fetch("https://api.github.com/repos/tonyljx/RunningDev");
   if (!res.ok) {
     return;
   }
