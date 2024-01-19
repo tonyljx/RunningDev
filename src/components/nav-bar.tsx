@@ -27,7 +27,7 @@ export default function NavBar({}: Props) {
   const { data: session, status } = useSession();
 
   return (
-    <header className="flex w-full justify-between border-b px-6 py-2">
+    <header className=" flex w-full justify-between border-b px-6 py-2">
       <a href="/" className="flex items-center gap-3">
         {/* <Image height={24} width={100} src="/vercel.svg" alt="logo" /> */}
         <Icons.vercel />
@@ -40,7 +40,7 @@ export default function NavBar({}: Props) {
         <Link
           target="_blank"
           href="https://twitter.com/abc30037274"
-          className="mr-3 rounded p-2 transition-colors duration-150 hover:bg-slate-200"
+          className="z-10 mr-3 rounded p-2 transition-colors duration-150 hover:bg-slate-200"
         >
           <Icons.X className="h-4 w-4" />
         </Link>
