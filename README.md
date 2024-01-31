@@ -16,7 +16,7 @@
 
 ---
 
-![RunningDev](./public/website.png)
+![RunningDev](./public/website-v2.png)
 
 ## 特点
 
@@ -26,11 +26,17 @@
 - 🌐i18n支持: 基于[next-intl](https://github.com/amannn/next-intl), 友好的支持国际化, **服务端/客户端**均给出示例, 可以方便的进行多流量设置
 - 🚀oauth支持: 基于[Nextauth](https://next-auth.js.org/) 的登录模板, 目前实现了基于 google 和 github 的oauth 登录,详细配置见 [这里](#环境变量)
 
+## Changelog
+
+2024年01月31日
+
+- 新增Changelog页面--搭配时间线自定义组件
+
 ## RoadMap
 
 - [ ] 集成Lemon Squeezy
 - [ ] NextAuth
-  - [ ] 登录
+  - [x] 登录
   - [ ] 注册
 
 ## 本地部署
@@ -89,8 +95,6 @@ npm run dev
   - 渐变颜色： [CSS Gradient — Generator, Maker, and Background](https://cssgradient.io/)
   - icon：[Lucide | Lucide](https://lucide.dev/icons/)
 
-
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=tonyljx/RunningDev&type=Date)](https://star-history.com/#tonyljx/RunningDev&Date)
-
