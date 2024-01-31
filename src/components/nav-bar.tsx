@@ -1,18 +1,12 @@
 "use client";
 import React from "react";
 import LoginModal from "./ui/tony/login-modal";
-import Image from "next/image";
 import { Icons } from "./ui/tony/icons";
 import Link from "next/link";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/option";
-import { Button } from "./ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { LogOut } from "lucide-react";
@@ -20,11 +14,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { signOut, useSession } from "next-auth/react";
 import { useColorStore } from "@/store/color-store";
 import LocaleSwitcher from "./locale-switcher";
+import { Link as IntlLink } from "@/navigation";
+import { useSelectedLayoutSegment } from "next/navigation";
+import { cn } from "@/lib/utils";
 type Props = {};
 
 export default function NavBar({}: Props) {
   const themeColor = useColorStore((state) => state.themeColor);
   const { data: session, status } = useSession();
+
+  // 获取下一级的路由, 只返回最后的路由,同级路由返回Null
+  // 参考 https://next-intl-docs.vercel.app/docs/routing/navigation
+  const selectedLayoutSegment = useSelectedLayoutSegment();
+  const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : "/";
 
   return (
     <header className=" flex w-full justify-between border-b px-6 py-2">
@@ -33,7 +35,20 @@ export default function NavBar({}: Props) {
         <Icons.vercel />
         <span className="text-lg font-semibold">RunningDev</span>
       </a>
+
       <div className="flex items-center gap-2">
+        <IntlLink
+          className={cn(
+            "mr-10 transition-colors duration-150 hover:text-sky-500",
+            {
+              "text-sky-500": pathname === "/about",
+            },
+          )}
+          href="/about"
+        >
+          Changlog
+        </IntlLink>
+
         {/* 多语言转换 */}
         <LocaleSwitcher />
 
@@ -54,7 +69,7 @@ export default function NavBar({}: Props) {
           <LoginModal />
         ) : (
           <div className="flex items-center gap-2">
-            <span className="text-base font-bold">Hi</span>
+            {/* <span className="text-base font-bold">Hi</span> */}
             <DropdownMenu>
               <DropdownMenuTrigger>
                 {session?.user?.image ? (

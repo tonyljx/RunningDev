@@ -32,9 +32,7 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
     <html lang={locale}>
       <body>
         {/* <div className="fixed -z-10 h-screen w-full bg-gradient-to-br from-indigo-100 via-slate-100 to-teal-50"></div> */}
-        <div className="absolute -right-20 top-10 z-0 h-60 w-80 bg-blue-600 opacity-30 blur-[80px]"></div>
-        <div className="absolute left-40 top-60 z-0 h-60 w-80 bg-blue-400 opacity-30 blur-[80px]"></div>
-        <div className="absolute right-40 top-60 z-0 h-60 w-80 bg-purple-400 opacity-30 blur-[80px]"></div>
+
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavBar />
           {children}

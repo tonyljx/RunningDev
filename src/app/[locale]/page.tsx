@@ -31,7 +31,10 @@ export default async function Home() {
   const t = await getTranslations("Index");
 
   return (
-    <main className="flex flex-col items-center gap-3 px-6">
+    <main className="mx-auto flex max-w-[1200px] flex-col items-center gap-3 px-6">
+      <div className="absolute -right-20 top-10 z-0 h-60 w-80 bg-blue-600 opacity-30 blur-[80px]"></div>
+      <div className="absolute left-40 top-60 z-0 h-60 w-80 bg-blue-400 opacity-30 blur-[80px]"></div>
+      <div className="absolute right-40 top-60 z-0 h-60 w-80 bg-purple-400 opacity-30 blur-[80px]"></div>
       <div className="mt-16 max-w-xl space-y-5">
         <h2 className="bg-gradient-to-r from-pink-500  to-violet-500 bg-clip-text text-center text-4xl font-bold text-transparent duration-1000 animate-in fade-in slide-in-from-bottom-5 md:text-7xl md:leading-[5rem]">
           {t("h1")}
