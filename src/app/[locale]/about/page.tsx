@@ -1,12 +1,13 @@
+import Confetti from "@/components/ui/tony/confetti";
 import { cn } from "@/lib/utils";
 import React from "react";
 
 type Props = {};
 
 const items = [
-  { event: "event-start", date: "2023-01-01" },
-  { event: "event-middle", date: "2023-07-01" },
-  { event: "event-end", date: "2023-12-31" },
+  { event: "⭐️项目启动", date: "2024-01-12" },
+  { event: "🎉新增路由, confetti效果", date: "2024-02-01" },
+  { event: "未完待续~", date: "2024-02-28" },
 ];
 
 export default function AboutPage({}: Props) {
@@ -35,6 +36,8 @@ export default function AboutPage({}: Props) {
           </div>
         ))}
       </div>
+
+      <Confetti />
     </div>
   );
 }
