@@ -7,6 +7,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 type Props = {
   children: ReactNode;

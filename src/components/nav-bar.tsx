@@ -49,6 +49,18 @@ export default function NavBar({}: Props) {
           Changlog
         </IntlLink>
 
+        <IntlLink
+          className={cn(
+            "mr-10 transition-colors duration-150 hover:text-sky-500",
+            {
+              "text-sky-500": pathname === "/me",
+            },
+          )}
+          href="/me"
+        >
+          Contact Us
+        </IntlLink>
+
         {/* 多语言转换 */}
         <LocaleSwitcher />
 

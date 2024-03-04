@@ -10,6 +10,7 @@ export default function Footer({}: Props) {
     <footer className="mt-20   flex w-full flex-wrap gap-10 border-t px-8 py-12 ">
       <div className="mr-auto flex flex-1 flex-col">
         <p className="flex-1">RunningDev</p>
+
         <div className="flex items-center gap-1">
           <Link
             target="_blank"
@@ -82,6 +83,16 @@ export default function Footer({}: Props) {
             className="transition-colors duration-200 hover:text-violet-500"
           >
             Shadcn
+          </Link>
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <p className="font-bold">Resources</p>
+          <Link
+            href="https://nextjs.org/"
+            className="transition-colors duration-200 hover:text-violet-500"
+          >
+            About Us
           </Link>
         </div>
       </div>
