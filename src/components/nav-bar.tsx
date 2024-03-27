@@ -61,6 +61,30 @@ export default function NavBar({}: Props) {
           Contact Us
         </IntlLink>
 
+        <IntlLink
+          className={cn(
+            "mr-10 transition-colors duration-150 hover:text-sky-500",
+            {
+              "text-sky-500": pathname === "/privacy-policy",
+            },
+          )}
+          href="/privacy-policy"
+        >
+          Privacy
+        </IntlLink>
+
+        <IntlLink
+          className={cn(
+            "mr-10 transition-colors duration-150 hover:text-sky-500",
+            {
+              "text-sky-500": pathname === "/terms-of-service",
+            },
+          )}
+          href="/terms-of-service"
+        >
+          Terms Of Service
+        </IntlLink>
+
         {/* 多语言转换 */}
         <LocaleSwitcher />
 

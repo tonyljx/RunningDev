@@ -5,7 +5,7 @@ export default createMiddleware({
   locales: ["en", "zh"],
 
   // Used when no locale matches
-  defaultLocale: "zh",
+  defaultLocale: "en",
 
   // 配置这个 默认url不显示多语言后缀
   // https://next-intl-docs.vercel.app/docs/routing/middleware#locale-prefix-as-needed

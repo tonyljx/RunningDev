@@ -2,6 +2,8 @@ import React from "react";
 import { Icons } from "./ui/tony/icons";
 import Link from "next/link";
 import Image from "next/image";
+import { Link as IntlLink } from "@/navigation";
+import { cn } from "@/lib/utils";
 
 type Props = {};
 
@@ -64,36 +66,35 @@ export default function Footer({}: Props) {
             Docs
           </Link>
         </div>
-        <div className="flex flex-col gap-3">
-          <p className="font-bold">Resources</p>
-          <Link
-            href="https://nextjs.org/"
-            className="transition-colors duration-200 hover:text-violet-500"
-          >
-            NextJs
-          </Link>
-          <Link
-            href="https://react.dev/"
-            className="transition-colors duration-200 hover:text-violet-500"
-          >
-            React
-          </Link>
-          <Link
-            href="https://ui.shadcn.com/"
-            className="transition-colors duration-200 hover:text-violet-500"
-          >
-            Shadcn
-          </Link>
-        </div>
 
         <div className="flex flex-col gap-3">
           <p className="font-bold">Resources</p>
-          <Link
-            href="https://nextjs.org/"
-            className="transition-colors duration-200 hover:text-violet-500"
+          <IntlLink
+            className={cn(
+              "mr-10 transition-colors duration-150 hover:text-sky-500",
+            )}
+            href="/me"
           >
-            About Us
-          </Link>
+            Contact Us
+          </IntlLink>
+
+          <IntlLink
+            className={cn(
+              "mr-10 transition-colors duration-150 hover:text-sky-500",
+            )}
+            href="/privacy-policy"
+          >
+            Privacy
+          </IntlLink>
+
+          <IntlLink
+            className={cn(
+              "mr-10 transition-colors duration-150 hover:text-sky-500",
+            )}
+            href="/terms-of-service"
+          >
+            Terms Of Service
+          </IntlLink>
         </div>
       </div>
     </footer>
