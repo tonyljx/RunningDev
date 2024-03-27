@@ -12,7 +12,9 @@ export default function AboutPage({}: Props) {
         We are a company developing saas sevice for global customers, currently
         we provide RunningDev, a lightweight saas nextjs template
       </p>
-      <p className="text-muted-foreground">Email: 15889666941@163.com</p>
+      <p className="text-muted-foreground">
+        Email: 15889666941@163.com / liangjiongxin@gmail.com{" "}
+      </p>
       <Confetti />
     </div>
   );
