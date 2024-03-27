@@ -53,11 +53,12 @@ export default function TermPage({}: Props) {
         This will let VividCode to terminate upon violations of any of these
         restrictions. Upon termination, your viewing right will also be
         terminated and you should destroy any downloaded materials in your
-        possession whether it is printed or electronic format. These Terms of
+        possession whether it is printed or electronic format.
+        {/* These Terms of
         Service has been created with the help of the{" "}
         <a href="https://www.termsofservicegenerator.net">
           Terms Of Service Generator
-        </a>
+        </a> */}
         .
       </p>
 
